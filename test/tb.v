@@ -28,7 +28,7 @@ module tb ();
 `endif
 
   // Replace tt_um_example with your module name:
-  tt_um_a_0_array_mulitiplier (
+  tt_um_a_0_array_muliplier (
 
       // Include power ports for the Gate Level test:
 `ifdef GL_TEST
