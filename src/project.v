@@ -17,7 +17,11 @@ module tt_um_a_0_array_muliplier (
 );
 
   // All output pins must be assigned. If not used, assign to 0.
+    wire [3:0] m = ui_in[7:4]
+    wire [3:0] q = ui_in[7:4]
+    wire [7:0] p;
 
+    
 
     
   assign uio_out = 0;
