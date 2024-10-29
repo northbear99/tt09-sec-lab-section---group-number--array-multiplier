@@ -5,16 +5,6 @@
 
 `default_nettype none
 
-module full_adder (
-    input a, 
-    input b, 
-    input cin, 
-    output sum, 
-    output cout
-);
-    assign {cout, sum} = a + b  + cin;
-endmodule
-
 module tt_um_a_0_array_muliplier (
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
@@ -131,11 +121,21 @@ module tt_um_a_0_array_muliplier (
     );
   
 
-    
+  assign uo_out = p;
   assign uio_out = 0;
   assign uio_oe  = 0;
 
   // List all unused inputs to prevent warnings
-    wire _unused = &{ena, clk, rst_n, uio_in,1'b0};
+  wire _unused = &{ena, clk, rst_n, uio_in,1'b0};
 
+endmodule
+
+module full_adder (
+    input a, 
+    input b, 
+    input cin, 
+    output sum, 
+    output cout
+);
+    assign {cout, sum} = a + b  + cin;
 endmodule
