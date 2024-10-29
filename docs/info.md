@@ -9,11 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+The project is a 4x4 array multiplier. The inputs m and q are 4-bit factors that get multiplied to produce the output p which is a 8-bit product of m and q. This was created using manual structural design. The module array_mult_structural multiplies two 4 bit inputs (m and q) to produce an 8-bit product. Design components such as AND gates and full adders were applied to construct the design. The full adder module takes three 1-bit inputs, a, b, and cin, and produces a 1-bit sum and a 1-bit cout. The assign statement was used to assign the results. Four 4-bit partial products were generated. The LSB (Least Significant Bit) was assigned as the LSB of the first partial product. The sum of the 4-bit partial products are assigned to the output, and the carryout is stored.
 
 ## How to test
 
-Explain how to use your project
+In order to use this project, two 4-bit factors can be assigned to m and q. The output p should be the product of m and q. 
+0. 10 * 5 = 50
+1. 4 * 2 = 8
+2. 0 * 0 = 0
+3. 2 * 1 = 2
+4. 7 * 7 = 49
 
 ## External hardware
 
