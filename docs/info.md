@@ -14,6 +14,7 @@ The project is a 4x4 array multiplier. The inputs m and q are 4-bit factors that
 ## How to test
 
 In order to use this project, two 4-bit factors can be assigned to m and q. The output p should be the product of m and q. 
+
 0. 10 * 5 = 50
 1. 4 * 2 = 8
 2. 0 * 0 = 0
