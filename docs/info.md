@@ -23,4 +23,4 @@ In order to use this project, two 4-bit factors can be assigned to m and q. The 
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+N/A
